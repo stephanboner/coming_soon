@@ -1,6 +1,8 @@
  /* Set height to 100% for body and html to enable the background image to cover the whole page: */
  body, html {
-    height: 100%
+    height: 100%;
+    /* Get rid of white margin */
+    margin: 0;
   }
   
   .bgimg {
@@ -25,7 +27,23 @@
   /* Position text in the top-left corner */
   .topleft {
     position: absolute;
-    top: 0;
+    top: 5px;
+    top: 12px;
+    left: 16px;
+  }
+
+  /* Position text in the top-right corner */
+  .topright {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 18px;
+  }
+
+  /* Position text in the bottom-left corner */
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
     left: 16px;
   }
   
@@ -49,4 +67,26 @@
   hr {
     margin: auto;
     width: 40%;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  a:link {
+    color: gray; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
   }
